@@ -1,21 +1,394 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Робота з діалоговими вікнами</title>
-</head>
-<body>
-    <script>
-        "use strict";
-        alert("Моє перше діалогове вікно!");
-        const answer = confirm("Хочете продовжити виконання сценарію на сторінці?");
-        
-        if (answer) {
-            const name = prompt("Введіть ваше ім'я", "");
-            alert(name + ", у вас все починає виходити!");
-        } else {
-            alert("Шкода, можна було б ще попрацювати!");
-        }
-    </script>
-</body>
-</html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Landing</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="logo">
+        <img class="logo_img" src="./img/logo.png" alt="logo" />
+        <p class="logo_text">ТЕЙГЕЛ БУД</p>
+      </div>
+      <ul id="menu">
+        <li class="menu_text">
+          <a class="link_pages" href="#main_page">Головна</a>
+        </li>
+        <li class="menu_text">
+          <a class="link_pages" href="#about_us">Про нас</a>
+        </li>
+        <li class="menu_text">
+          <a class="link_pages" href="#projects">Проекти</a>
+        </li>
+        <li class="menu_text">
+          <a class="link_pages" href="#services">Послуги</a>
+        </li>
+        <li class="menu_text">
+          <a class="link_pages" href="#bottom">Зв'яжіться з нами</a>
+        </li>
+      </ul>
+    </div>
+    <div id="main_page">
+      <div id="mission_text">
+        <p id="things_text">
+          Створення будівель <br />
+          — наша місія.
+        </p>
+      </div>
+      <div id="feature">
+        <div id="feature_block">
+          <p id="first_title">Ключові проекти</p>
+          <p id="second_title">
+            Національний університет <br />
+            архітектури
+          </p>
+          <div id="btns">
+            <button id="back_btn">
+              <img class="first_arrow" src="./img/back.png" alt="назад" />
+              <p class="btn_text">Назад</p>
+            </button>
+            <button id="next_btn">
+              <p class="btn_text">Далі</p>
+              <img class="second_arrow" src="./img/next.png" alt="далі" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="reasons">
+      <p id="main_text">Наша репутація</p>
+      <div id="boxes">
+        <div class="reason_boxes">
+          <img
+            src="./img/headphones.png"
+            alt="навушники"
+            class="reasons_img"
+          />
+          <p class="general_title">Найкращі послуги</p>
+          <p class="text_reason">
+            Нуллам сенектус портітор у <br />
+            еґет. Еґет рутрум лео інтердум.
+          </p>
+        </div>
+        <div class="reason_boxes">
+          <img
+            src="./img/headphones.png"
+            alt="навушники"
+            class="reasons_img"
+          />
+          <p class="general_title">Найкращі команди</p>
+          <p class="text_reason">
+            Курсус семпер теллус волютпат <br />
+            алікет лакус.
+          </p>
+        </div>
+        <div class="reason_boxes">
+          <img src="./img/third.png" alt="лінійка" class="reasons_img" />
+          <p class="general_title">Найкращі дизайни</p>
+          <p class="text_reason">
+            Ультріцієс у іпсум нунк, <br />
+            трістікє нам лекцтус.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="about_us">
+      <img src="./img/founder.png" alt="засновник" id="founder_img" />
+      <div id="frame">
+        <p id="frame_title">Про нас</p>
+        <p class="frame_text">
+          Більше ніж 30 років ми <br />
+          надаємо світовий клас будівництва <br />
+          та будуємо багато міцних <br />
+          відносин на цьому шляху.<br />
+        </p>
+        <p class="frame_text">
+          Ми виросли до рівня лідера галузі <br />
+          та надійного ресурсу для тих, хто шукає <br />
+          якість, інновації та надійність <br />
+          у будівництві в США.
+        </p>
+        <button id="frame_btn">Детальніше про нашу історію</button>
+      </div>
+    </div>    
+    <div id="services">
+      <p id="services_text">Послуги</p>
+      <div id="service_blocks_first">
+        <div class="service_card_w">
+          <img src="./img/construction.png" alt="будівництво" class="w_img" />
+          <hr />
+          <p class="w_text">Будівництво</p>
+        </div>
+        <div class="service_card_b">
+          <img src="./img/renovation.png" alt="реновація" class="w_img" />
+          <hr />
+          <p class="b_text">Реновація</p>
+        </div>
+        <div class="service_card_w">
+          <img src="./img/consultation.png" alt="консультація" class="w_img" />
+          <hr />
+          <p class="w_text">Консультація</p>
+        </div>
+      </div>
+      <div id="service_blocks_second">
+        <div class="service_card_b">
+          <img
+            src="./img/repair_services.png"
+            alt="ремонтні послуги"
+            class="b_img"
+          />
+          <hr />
+          <p class="b_text">Ремонтні послуги</p>
+        </div>
+        <div class="service_card_w">
+          <img src="./img/architecture.png" alt="архітектура" class="b_img" />
+          <hr />
+          <p class="w_text">Архітектура</p>
+        </div>
+        <div class="service_card_b">
+          <img src="./img/electric.png" alt="електрика" class="b_img" />
+          <hr />
+          <p class="b_text">Електрика</p>
+        </div>
+      </div>
+    </div>
+    <div id="stats">
+      <div id="left_part">
+        <div id="happy_clients">
+          <img src="./img/hands.png" alt="задоволені клієнти" id="hands_img" />
+          <div id="number_first">84</div>
+          <div class="inside">
+            <div class="small_frame"></div>
+            <p class="inside_text">Задоволені клієнти</p>
+          </div>
+        </div>
+        <div id="projects_completed">
+          <img src="./img/letter.png" alt="листи" id="letter_img" />
+          <div id="number_second">123</div>
+          <div class="inside">
+            <div class="small_frame"></div>
+            <p class="inside_text">Завершені проекти</p>
+          </div>
+        </div>
+        <div id="awards_win">
+          <img src="./img/award.png" alt="нагороди" id="award_img" />
+          <div id="number_third">37</div>
+          <div class="inside">
+            <div class="small_frame"></div>
+            <p class="inside_text">Виграні нагороди</p>
+          </div>
+        </div>
+        <div id="years_in_business">
+          <img src="./img/map.png" alt="карта" id="map_img" />
+          <div id="number_fourth">30</div>
+          <div class="inside">
+            <div class="small_frame"></div>
+            <p class="inside_text">Роки в бізнесі</p>
+          </div>
+        </div>
+      </div>
+      <div id="right_part">
+        <p id="experience_title">
+          30 Років <br />
+          Досвіду
+        </p>
+        <p id="experience_text">
+          Наша компанія є провідним <br />
+          постачальником будівельних <br />
+          послуг для клієнтів по всьому <br />
+          США з 1988 року.
+        </p>
+        <button id="contact_btn">Зв'язатися з нами</button>
+      </div>
+    </div>    
+      </div>
+    </div>
+    <div id="ads">
+      <div id="left_info">
+        <p id="ads_title">Безкоштовна консультація з відмінною якістю</p>
+        <p id="ads_text">
+          Лише один дзвінок:
+          <a href="tel:+38089673236" id="tel"> +38089673236</a>
+        </p>
+      </div>
+      <div id="right_btn">
+        <button id="get_btn">Отримати консультацію</button>
+      </div>
+    </div>
+    <div id="projects">
+      <div id="menu_block">
+        <div id="menu_table">
+          <p id="projects_title">Проекти</p>
+          <ul id="projects_menu">
+            <li class="menu_item">
+              <a class="projects_links" href="#">Усі</a>
+            </li>
+            <li class="menu_item">
+              <a class="projects_links" href="#">Комерційні</a>
+            </li>
+            <li class="menu_item">
+              <a class="projects_links" href="#">Житлові</a>
+            </li>
+            <li class="menu_item">
+              <a class="projects_links" href="#">Інші</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="project_cards">
+        <div id="first_line_projects">
+          <div id="wildstone_block">
+            <img src="./img/wildstone.png" alt="Wildstone" />
+            <div class="box_text">
+              <p class="block_title">Готель Wildstone Infra</p>
+              <p class="block_text">2715 Еш Драйв, Сан-Хосе, Південна Дакота</p>
+            </div>
+          </div>
+          <div id="wish_block">
+            <img src="./img/wish_stone.png" alt="Wish Stone" />
+            <div class="box_text">
+              <p class="block_title">Готель Wildstone Infra</p>
+              <p class="block_text">2715 Еш Драйв, Сан-Хосе, Південна Дакота</p>
+            </div>
+          </div>
+        </div>
+        <div id="second_line_projects">
+          <div id="parkinston_block">
+            <img src="./img/parkinston.png" alt="Parkinston" />
+            <div class="box_text">
+              <p class="block_title">Будинок містера Паркінстона</p>
+              <p class="block_text">3517 В. Грей Стріт, Ютика, Пенсільванія</p>
+            </div>
+          </div>
+          <div id="oregano_block">
+            <img src="./img/oregano.png" alt="Oregano" />
+            <div class="box_text">
+              <p class="block_title">Будинок містера Паркінстона</p>
+              <p class="block_text">3517 В. Грей Стріт, Ютика, Пенсільванія</p>
+            </div>
+          </div>
+        </div>
+        <div id="projects_btns">
+          <button id="back_button">
+            <img class="first_arrow" src="./img/back.png" alt="назад" />
+            <p class="btn_text">Назад</p>
+          </button>
+          <div id="circle_parts">
+            <img
+              src="./img/active_circle.png"
+              alt="активне коло"
+              id="active_circle"
+            />
+            <img
+              src="./img/inactive_circle.png"
+              alt="неактивне коло"
+              class="inactive_circle"
+            />
+            <img
+              src="./img/inactive_circle.png"
+              alt="неактивне коло"
+              class="inactive_circle"
+            />
+            <img
+              src="./img/inactive_circle.png"
+              alt="неактивне коло"
+              class="inactive_circle"
+            />
+            <img
+              src="./img/inactive_circle.png"
+              alt="неактивне коло"
+              class="inactive_circle"
+            />
+          </div>
+          <button id="next_button">
+            <p class="btn_text">Далі</p>
+            <img class="second_arrow" src="./img/next.png" alt="далі" />
+          </button>
+        </div>
+      </div>
+    </div>    
+    <div id="contact_form">
+      <p id="contact_title">Що ми можемо зробити для вас?</p>
+      <p id="contact_text">
+        Ми готові працювати над проєктом будь-якої складності, <br />
+        чи то комерційний, чи житловий.
+      </p>
+      <div id="first_line_inp">
+        <input
+          placeholder="Ваше ім'я*"
+          type="text"
+          required
+          class="first_line"
+        />
+        <input placeholder="Електронна пошта*" type="email" required class="first_line" />
+      </div>
+      <div id="second_line_inp">
+        <input
+          placeholder="Причина звернення*"
+          type="text"
+          required
+          id="reason_inp"
+        />
+        <input placeholder="Телефон" type="tel" required id="phone_inp" />
+      </div>
+      <div id="third_line_inp">
+        <textarea
+          placeholder="Повідомлення"
+          type="text"
+          required
+          id="message_inp"
+        ></textarea>
+        <p id="text_indicates">
+          <span id="star">*</span> вказує на обов'язкове поле
+        </p>
+      </div>
+      <input type="submit" value="Відправити" id="submit_btn" />
+    </div>
+    <div id="bottom">
+      <div id="leftcontact">
+        <div id="first_info_text">
+          <p id="first_condition">Адреса:</p>
+          <p id="first_info">Польща м.Варшава </p>
+        </div>
+        <div class="second_info_text">
+          <p class="two_conditions">Телефон:</p>
+          <p id="second_info">+38089673236</p>
+        </div>
+        <div class="second_info_text">
+          <p class="two_conditions">Електронна пошта:</p>
+          <p id="third_info">ivanteihel@lfkhpp.ukr.education</p>
+        </div>
+        <div class="logo">
+          <img class="logo_img" src="./img/logo.png" alt="логотип" />
+          <p class="logo_text">ТЕЙГЕЛ БУД </p>
+        </div>
+      </div>
+      <div id="right_contact">
+        <p id="newsletter_text">Розсилка:</p>
+        <div id="email_contact">
+          <input type="email" placeholder="Ваш email тут" id="email_inp" />
+          <button id="subs_btn">Підписатися</button>
+        </div>
+        <div>
+          <p id="social_text">Соціальні мережі:</p>
+          <div id="social_sites">
+            <a href="https://www.facebook.com/" target="_ blank"
+              ><img src="./img/facebook.png" alt="facebook"
+            /></a>
+            <a href="https://www.linkedin.com/" target="_ blank"
+              ><img src="./img/linkedin.png" alt="linkedin"
+            /></a>
+            <a href="https://twitter.com/" target="_ blank"
+              ><img src="./img/twitter.png" alt="twitter"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <p>Компанія ТЕЙГЕЛ БУД © 2024. Усі права захищено</p>
+    </div>
+    
